@@ -1,0 +1,56 @@
+= ドキュメントタイトル 
+株式会社 かえるさん
+v0.1(Draft) 2016/12/12
+
+
+//==============================================================
+// Attribute / アトリビュート
+//==============================================================
+:lang: ja                                 // 日本語ドキュメント
+:doctype: book                            // 文書タイプは book にする
+:description:                             // ドキュメントに関する説明 
+:docname: ドキュメント名                   // ドキュメント名、ヘッダーに入る
+:imagesdir: ./images                      // イメージファイルを置くフォルダ（相対PATH）
+:icons: font                              // アイコンフォントを利用するフラグ
+:iconsdir: ./images/icons                 // アイコンファイルの保管場所（未使用）
+:pdf-fontsdir: fonts                      // フォントファイルを置くフォルダ（相対PATH）
+:pdf-style: style/public_style.yml        // スタイルファイルを指定（相対PATH）
+:title-page-background-image: image:theme/titlepage_fujitsu_background_gray.png[]　// 表紙背景画像ファイルを指定（相対PATH）
+
+:sectnums:
+:chapter-label: 
+
+
+
+
+:toc:
+:toclevels: 3
+
+
+
+:source-highlighter: coderay
+
+
+
+:toc-title: 目次
+:preface-title: はじめに
+:appendix-caption: 付録
+:caution-caption: 注意
+:example-caption: 例
+:figure-caption: 図
+:important-caption: 重要
+:last-update-label: 最終更新
+:listing-caption: リスト
+:manname-title: 名前
+:note-caption: 注記
+:preface-title: まえがき
+:table-caption: 表
+:tip-caption: ヒント
+:toc-title: 目次
+:untitled-label: 無題
+:version-label: バージョン
+:warning-caption: 警告
+
+
+
+

@@ -1,0 +1,50 @@
+#!/bin/sh
+###########################################
+#
+#       otokata command
+#       otolog
+#
+###########################################
+
+#######
+# env #
+#######
+Files="/manager/oto/otolog/colorlog.sed"
+org="/manager/oto/otolog/org/colorlog.sed.org"
+i=0
+
+
+###########
+# Program #
+###########
+\cp -f ${org} ${Files}
+
+for x in "$@"
+ do
+        i=$((i+1))
+        if [ $i -eq 1 ] ; then
+                echo "s/\($x\)/\x1b[36;47;5m\1\x1b[0m/" >> ${Files}
+
+         elif [ $i -eq 2 ] ; then
+                echo "s/\($x\)/\x1b[31;44;5m\1\x1b[0m/" >> ${Files}
+
+         elif [ $i -eq 3 ] ; then
+                echo "s/\($x\)/\x1b[1;32;44m\1\x1b[0m/" >> ${Files}
+
+         elif [ $i -eq 4 ] ; then
+                echo "s/\($x\)/\x1b[1;34;42m\1\x1b[0m/" >> ${Files}
+
+         elif [ $i -eq 5 ] ; then
+                echo "s/\($x\)/\x1b[33;45;5m\1\x1b[0m/" >> ${Files}
+
+        else
+          echo NG > /dev/nul
+
+        fi
+ done
+
+sleep 1
+
+#logtool | nkf -uw  | /manager/oto/otolog/colorlog.sed
+ccze -A | nkf -uw  | /manager/oto/otolog/colorlog.sed
+#nkf -uw  | /manager/oto/otolog/colorlog.sed

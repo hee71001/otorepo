@@ -1,0 +1,12 @@
+footer:
+  font_size: $base_font_size_small
+  font_color: $base_font_color
+  border_color: dddddd
+  border_width: 0.25
+  height: 25mm
+  padding: [3mm,0,0,0]
+  valign: top
+  recto_content:
+    center: '{page-number} / {page-count}'
+  verso_content:
+    center: '{page-number} / {page-count}'

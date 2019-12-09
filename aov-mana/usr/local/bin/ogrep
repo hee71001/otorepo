@@ -1,0 +1,137 @@
+#!/bin/perl
+#########################################
+#
+#	oto program ver.5.1
+#	ogrep
+#
+#	DATE    : 2018/02/06
+#	UPDATE  : 2019/09/30
+#	WRITE   : otokata
+#
+#########################################
+##########
+# Module #
+##########
+use Term::ANSIColor qw(:constants);
+
+
+#######
+# ENV #
+#######
+$Target = "/manager/oto/ogrep";
+$OA = "$Target/01_OA";
+$T_PFS = "$Target/02_tougoPFS";
+$AOV = "$Target/03_AOV";
+$LGSEC_G = "$Target/04_GIFU";
+$LGSEC_A = "$Target/05_AICHI";
+$LGSEC_F = "$Target/06_FUKUI";
+$LGSEC_F_edu = "$Target/07_FUKUIEDU";
+@nums = @ARGV;
+
+###########
+# Program #
+###########
+
+if ($#ARGV == -1) { 
+   print "nasi\n";
+
+} else {
+   for (my $i = 0; $i <= $#nums; $i++){
+      $KEY = "$nums[$i]";
+       &Search($OA,OA);
+       &Search($T_PFS,T_PFS);
+       &Search($AOV,AOV);
+       &Search($LGSEC_F,lgsec_fukui);
+       &Search($LGSEC_F_edu,lgsec_fukuiedu);
+       &Search($LGSEC_A,lgsec_aichi);
+       &Search($LGSEC_G,lgsec_gifu);
+   }
+}
+
+
+###########
+# Fuction #
+###########
+sub Search {
+$ID="$_[0]";
+$ID2="$_[1]";
+
+#baka
+$scalar = `nkf -uw $ID | rg -i $KEY`;
+if($scalar){
+&$ID2;
+#print "$scalar\n";
+}
+
+open(IN, "nkf -uw $ID | rg -i $KEY |");
+ while ($line = <IN>) {
+  if ($line =~ s/${KEY}/\e[1;31;44m$&\e[0m/i){
+	print $line; 
+ }
+}
+close(IN);
+
+}
+print "\n";
+
+sub OA {
+print <<"EOF";
+-------------------------------------------------
+OA/RMS
+-------------------------------------------------
+EOF
+}
+
+sub T_PFS {
+print <<"EOF";
+-------------------------------------------------
+統合PF
+-------------------------------------------------
+EOF
+}
+
+sub AOV {
+print <<"EOF";
+-------------------------------------------------
+AOV
+-------------------------------------------------
+EOF
+}
+
+sub lgsec_fukui {
+print <<"EOF";
+-------------------------------------------------
+自治体 福井SC
+-------------------------------------------------
+EOF
+}
+
+sub lgsec_fukuiedu {
+print <<"EOF";
+-------------------------------------------------
+自治体 福井教育
+-------------------------------------------------
+EOF
+}
+
+sub lgsec_aichi {
+print <<"EOF";
+-------------------------------------------------
+自治体 愛知SC
+-------------------------------------------------
+EOF
+}
+
+sub lgsec_gifu {
+print <<"EOF";
+-------------------------------------------------
+自治体 岐阜SC
+-------------------------------------------------
+EOF
+}
+
+
+
+
+
+

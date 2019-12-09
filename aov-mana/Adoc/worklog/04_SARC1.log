@@ -1,0 +1,79 @@
+
+[oa105@violed ~]$ 
+[oa105@violed ~]$ 
+[oa105@violed ~]$ ssh -l root 192.168.24.101
+Password: 
+The time and date of this login have been sent to the system logs.
+
+WARNING:
+   All commands run on the ESXi shell are logged and may be included in
+   support bundles. Do not provide passwords directly on the command line.
+   Most tools can prompt for secrets or accept them from standard input.
+
+VMware offers supported, powerful system administration tools.  Please
+see www.vmware.com/go/sysadmintools for details.
+
+The ESXi Shell can be disabled by an administrative user. See the
+vSphere Security documentation for more information.
+
+[root@esxi-oa-11 :~] 
+[root@esxi-oa-11 :~] 
+[root@esxi-oa-11 :~] cd /tmp/work/
+[root@esxi-oa-11 :/tmp/work] ls
+CP039996.zip
+
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] unzip CP039996.zip 
+Archive:  CP039996.zip
+  inflating: CP039996.vmexe
+  inflating: CP039996.vmfile
+  inflating: CP039996.xml
+  inflating: payload.json
+  inflating: README.txt
+
+[root@esxi-oa-11 :/tmp/work] ls -l
+total 25516
+-rwx------    1 root     root         27304 Nov 19 06:11 CP039996.vmexe
+-rw-r--r--    1 root     root      12900223 Nov 19 06:11 CP039996.vmfile
+-rw-r--r--    1 root     root        400759 Nov 19 06:11 CP039996.xml
+-rw-r--r--    1 root     root      12780703 Nov 19 03:59 CP039996.zip
+-rw-r-xr-x    1 root     root          1129 Nov 19 06:11 README.txt
+-rw-r--r--    1 root     root          6443 Nov 19 06:11 payload.json
+
+[root@esxi-oa-11 :/tmp/work] chmod *
+[root@esxi-oa-11 :/tmp/work] ls -l
+total 25516
+-rwxr-xr-x    1 root     root         27304 Nov 19 05:12 CP039996.vmexe
+-rwxr-xr-x    1 root     root      12900223 Nov 19 05:12 CP039996.vmfile
+-rwxr-xr-x    1 root     root        400759 Nov 19 05:12 CP039996.xml
+-rwxr-xr-x    1 root     root      12780703 Nov 19 03:59 CP039996.zip
+-rwxr-xr-x    1 root     root          1129 Nov 19 05:12 README.txt
+-rwxr-xr-x    1 root     root          6443 Nov 19 05:12 payload.json
+
+[root@esxi-oa-11 :/tmp/work] ./CP039996.vmexe
+OS: VMkernel 6.5
+Online ROM Flash Component for VMware ESXi - Smart Array and Smart HBA H240ar, H240nr, H240, H241, H244br, P240nr, P244br, P246br, P440ar, P440, P441, P542D, P741m, P840, P840ar, and  P841 (7.00), searching...
+1) Smart Array P440ar in Slot 0 (5.04)
+Select which devices to flash [#,#-#,(A)ll,(N)one]> A
+Flashing Smart Array P440ar in Slot 0 [ 5.04 -> 7.00 ]
+Deferred flashes will be performed on next system reboot
+AUX Power Cycle request sent successfully.
+============ Summary ============
+Smart Component Finished
+
+Summary Messages
+================
+Reboot needed to activate 1 new FW image
+
+Exit Status: 1
+Deferred flashes will be performed on next system reboot
+A reboot is required to complete update.
+
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] 
+[root@esxi-oa-11 :/tmp/work] reboot 
+[root@esxi-oa-11 :/tmp/work] Connection to 192.168.24.101 closed by remote host.
+Connection to 192.168.24.101 closed.

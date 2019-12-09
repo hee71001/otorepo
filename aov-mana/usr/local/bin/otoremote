@@ -1,0 +1,152 @@
+#!/bin/sh
+###########################################################
+#       UTM SYSTEM
+#       FortiOS Retemote Program
+#
+#       Write   : otokata
+#       Date    : 2016/07/05
+#       UPDate  : 2016/07/05
+###########################################################
+
+############
+# Function #
+############
+
+### 0 ###
+function rdp_utm (){
+case $commandbit in
+  "0" ) sshpass -p A9stgMngd89 ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p A9stgMngd89 ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+
+### 1 ###
+function rdp_aov (){
+case $commandbit in
+  "0" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+### 2 ###
+function rdp_admin (){
+case $commandbit in
+  "0" ) sshpass -p A9stgMngd89  ssh -o StrictHostKeyChecking=no admin@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p A9stgMngd89  ssh -o StrictHostKeyChecking=no admin@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+### 3 ###
+function rdp_Administrator (){
+case $commandbit in
+  "0" ) sshpass -p Neoaqs2013 ssh -o StrictHostKeyChecking=no Administrator@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p Neoaqs2013 ssh -o StrictHostKeyChecking=no Administrator@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+### 4 ###
+function rdp_nwadmin (){
+case $commandbit in
+  "0" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no nwadmin@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no nwadmin@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+### 5 ###
+function rdp_naroot (){
+case $commandbit in
+  "0" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no naroot@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p Neoaqs2013  ssh -o StrictHostKeyChecking=no naroot@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+### 6 ###
+function rdp_siem (){
+case $commandbit in
+  "0" ) sshpass -p Neosiem2018  ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP ;;
+  "1" ) sshpass -p Neosiem2018  ssh -o StrictHostKeyChecking=no root@192.168.1.$remoteIP "$cmdline" ;;
+  * ) echo error !! ;;
+esac
+}
+
+
+
+
+###########
+# Program #
+###########
+
+if expr "$1" : '[0-9]*c' > /dev/null ; then
+  #echo "command"
+    remoteIP=`echo $1 | sed -e 's/c//g'`
+    commandbit="1"
+    cmdline="$2"
+
+    aovno=`grep -v "#" /usr/local/bin/aovip_no | awk '{print $1}' | grep -w $remoteIP`
+
+    if [ -n "$aovno" ]; then
+       #echo "Key Hit"
+       baka=`grep -v "#" /usr/local/bin/aovip_no | grep -w ^$remoteIP | awk '{print $2}'`
+     else
+       #echo "Key NO Hit"
+       baka="0"
+    fi
+
+ else
+
+    #echo "ssh remote"
+    remoteIP="$1"
+    commandbit="0"
+    aovno=`grep -v "#" /usr/local/bin/aovip_no | awk '{print $1}' | grep -w $remoteIP`
+    if [ -n "$aovno" ]; then
+       #echo "Key Hit"
+       baka=`grep -v "#" /usr/local/bin/aovip_no | grep -w ^$remoteIP | awk '{print $2}'`
+     else
+       #echo "Key NO Hit"
+       baka="0"
+    fi
+fi
+
+
+#---------------------------------------------------------------#
+
+if [ $baka = 0 ]; then
+    #echo "aov $1"
+    rdp_aov
+
+ elif [ $baka = 1 ]; then 
+    #echo "utm $1"
+    rdp_admin
+
+ elif [ $baka = 2 ]; then
+    #echo "admin $1"
+    rdp_admin
+
+ elif [ $baka == 3 ]; then
+    #echo "Administrator $1"
+    rdp_Administrator
+ 
+ elif [ $baka == 4 ]; then
+    #echo "nwadmin $1"
+    rdp_nwadmin
+
+ elif [ $baka == 5 ]; then
+    #echo "naroot $1"
+    rdp_naroot
+
+ elif [ $baka == 6 ]; then
+    #echo "siem $1"
+    rdp_siem
+
+ else 
+   echo "error"
+
+fi
+
