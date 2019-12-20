@@ -1,0 +1,194 @@
+fkiec-fw01	10.255.65.252	ファイアウォール（Active）	-	admin / Fkiec-3102	Fortigate500D	https	三谷商事
+fkiec-fw02	10.255.65.253	ファイアウォール（Stanby）	-	admin / Fkiec-3102	Fortigate500D	https	三谷商事
+fkiec-l301	10.255.65.254	L3SW（スタック構成）	-	-	SwitchBlade x8112	ssh	ＮＴＴ西日本福井支店
+fkiec-wa01	10.255.65.81	WAF（1号機）	-	-	FortiWeb	https	図研
+fkiec-wa02	10.255.65.82	WAF（2号機）	-	-	FortiWeb	https	図研
+fkiec-lb01	10.255.65.110	ロードバランサ（1号機）	-	-	LoadMaster 3400	ssh	TAS
+fkiec-lb02	-	ロードバランサ（2号機）	-	-	LoadMaster 3400	ssh	TAS
+fkiec-vc01	10.255.65.21	RDS	-	-	SSDセンターサーバ	ssh	-
+fkiec-vr01	10.255.65.22	RDS	-	-	SSDリレーサーバ	ssh	-
+fkiec-sb01	10.255.65.85	サンドボックス（1号機）	-	-	Deep Discovery Inspector 1100	ssh	三谷商事
+fkiec-sb02	10.255.65.86	サンドボックス（2号機）	-	-	Deep Discovery Inspector 1100	ssh	三谷商事
+fkiec-vm01	10.255.65.251	仮想基盤（1号機）	-	root / Fkiec-3102	Linux基盤 ＃1	https	YRL(ヨコオ)
+fkiec-vm02	10.255.65.250	仮想基盤（2号機）	-	root / Fkiec-3102	Linux基盤 ＃2	https	YRL(ヨコオ)
+fkiec-vm03	10.255.65.249	仮想基盤（3号機）	-	root / Fkiec-3102	Linux基盤 ＃3	https	YRL(ヨコオ)
+fkiec-vm04	10.255.65.248	仮想基盤（4号機）	-	root / Fkiec-3102	Linux基盤 ＃4	https	YRL(ヨコオ)
+fkiec-vm05	10.255.65.247	仮想基盤（5号機）	-	root / Fkiec-3102	Linux基盤 ＃5	https	YRL(ヨコオ)
+fkiec-vm06	10.255.65.246	仮想基盤（6号機）	-	root / Fkiec-3102	Linux基盤 ＃6	https	YRL(ヨコオ)
+fkiec-vm07	10.255.65.245	仮想基盤（7号機）	-	root / Fkiec-3102	Linux基盤 ＃7	https	YRL(ヨコオ)
+fkiec-vm08	10.255.65.244	仮想基盤（8号機）	-	root / Fkiec-3102	Windows基盤 ＃1	https	YRL(ヨコオ)
+fkiec-vm09	10.255.65.243	仮想基盤（9号機）	-	root / Fkiec-3102	Windows基盤 ＃2	https	YRL(ヨコオ)
+fkiec-vm10	10.255.65.242	仮想基盤（10号機）	-	root / Fkiec-3102	Windows基盤 ＃3	https	YRL(ヨコオ)
+fkiec-st01	10.255.65.218	ストレージ（メイン）	-	-	3PAR	ssh	-
+fkiec-st02	10.255.65.217	ストレージ（サブ）	-	-	MSA	ssh	-
+fkiec-fa01	10.255.65.3	ログ分析装置	-	-	Fortianalyzer	ssh	三谷商事
+fkiec-cm01	10.255.65.31	CMSサーバ	-	root / Fkiec-3102	Wordpress	ssh	三谷商事/ＮＴＴ西日本福井支店
+fkiec-ww01	10.255.65.230	WWWサーバ(WEB)	-	root / Fkiec-3102	Apache、Pearl、（MySQL、PHP）	ssh	三谷商事/ＮＴＴ西日本福井支店
+fkiec-ww02	10.255.65.231	WWWサーバ(WEB)	-	root / Fkiec-3102	Apache、Pearl、（MySQL、PHP）	ssh	三谷商事/ＮＴＴ西日本福井支店
+fkiec-ww03	10.255.65.232	WWWサーバ(WEB)	-	root / Fkiec-3102	Apache、Pearl、（MySQL、PHP）	ssh	三谷商事/ＮＴＴ西日本福井支店
+fkiec-wf01	10.255.65.39	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-wf02	10.255.65.40	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-wf03	10.255.65.41	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-wf04	10.255.65.42	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-wf05	10.255.65.43	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-wf06	10.255.65.44	WEBフィルタリングサーバ	-	root / Fkiec-3102	InterSafe WebFilter 福井県教育庁特別対応版	ssh	TAS
+fkiec-id01	10.255.65.23	内部DNS	-	root / Fkiec-3102	BIND	ssh	ＮＴＴ西日本福井支店
+fkiec-id02	10.255.65.24	内部DNS	-	root / Fkiec-3102	BIND	ssh	ＮＴＴ西日本福井支店
+fkiec-id03	10.255.65.25	内部DNS	-	root / Fkiec-3102	BIND	ssh	ＮＴＴ西日本福井支店
+fkiec-id04	10.255.65.26	管理Seg用権威DNS	-	root / Fkiec-3102	BIND	ssh	-
+fkiec-av01	10.255.65.89	アンチウイルス	-	administrator / Fkiec-3102	C/S Suite EduPlus5年ライセンス	ssh	-
+fkiec-fs01	10.255.65.91	ファイル共有	-	administrator / Fkiec-3102	教員用（1,550名分）	ssh	三谷商事
+fkiec-fs02	10.255.65.92	ファイル共有	-	administrator / Fkiec-3102	教員用（1,550名分）	ssh	三谷商事
+fkiec-ss01	10.255.65.93	資産管理	-	administrator / Fkiec-3102	SKYSEA 基本サーバ	ssh	三谷商事
+fkiec-sd01	10.255.65.95	資産管理	-	administrator / Fkiec-3102	SKYSEA データベースサーバ	ssh	三谷商事
+fkiec-ws01	10.255.65.97	WSUS	-	administrator / Fkiec-3102	WSUS	ssh	-
+fkiec-ad01	10.255.65.99	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	上位ドメイン（fukui-ed.jp）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad02	10.255.65.100	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	上位ドメイン（fukui-ed.jp）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad11	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	藤島高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad12	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	高志高等学校・高志中学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad13	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	羽水高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad14	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	足羽高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad15	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	三国高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad16	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	金津高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad17	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	丸岡高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad18	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	丸岡高等学校（定時制）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad19	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	大野高等学校（全日、定時）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad20	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	勝山高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad21	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	鯖江高等学校（全日、定時）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad22	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	丹南高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad23	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	丹生高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad24	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	武生高等学校（全日、定時）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad25	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	武生高等学校　池田分校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad26	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	武生東高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad27	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	敦賀高等学校（全日、定時）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad28	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	美方高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad29	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	若狭高等学校（全日、定時）	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad30	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	若狭高等学校 海洋キャンパス	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad31	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	若狭東高等学校	Vcenterにログイン後コンソールで確認	三谷商事
+fkiec-ad32	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井農林高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad33	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	坂井高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad34	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	科学技術高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad35	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	奥越明成高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad36	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	武生工業高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad37	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	敦賀工業高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad38	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井商業高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad39	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	武生商業高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad40	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	道守高等学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad41	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	盲学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad42	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	ろう学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad43	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad44	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井南特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad45	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井東特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad46	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井東特別支援学校　月見分教室	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad47	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	福井東特別支援学校　五領分教室	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad48	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	奥越特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad49	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	嶺北特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad50	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	清水特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad51	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	南越特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad52	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	嶺南東特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad53	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	嶺南西特別支援学校	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad54	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	県教育委員会	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad55	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	嶺南教育事務所	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad56	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	教育総合研究所	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-ad57	-	ドメイン管理サーバ(AD)	-	administrator / Fkiec-3102	特別支援教育センター	Vcenterにログイン後コンソール接続	三谷商事
+fkiec-is01	10.255.65.111	暗号化	-	administrator / Fkiec-3102	InterSafe IRM クライアントライセンスアカデミック	ssh	TAS
+fkiec-is02	10.255.65.112	暗号化	-	administrator / Fkiec-3102	InterSafe IRM クライアントライセンスアカデミック	ssh	TAS
+fkiec-tb01	10.255.65.113	メール無害化	-	root / Fkiec-3102	TEMPBOX	ssh	TAS
+fkiec-tb02	10.255.65.114	メール無害化	-	root / Fkiec-3102	TEMPBOX	ssh	TAS
+fkiec-ts01	10.255.65.115	メール無害化	-	root / Fkiec-3102	TEMPBOX（なりすまし検知オプション）	ssh	TAS
+fkiec-ts02	10.255.65.116	メール無害化	-	root / Fkiec-3102	TEMPBOX（なりすまし検知オプション）	ssh	TAS
+fkiec-sf01	10.255.65.117	ファイル無害化	-	root / Fkiec-3102	SmoothFile	ssh	TAS
+fkiec-sf02	10.255.65.118	ファイル無害化	-	root / Fkiec-3102	SmoothFile	ssh	TAS
+fkiec-mg01	10.255.65.119	原本保存（受信用）	-	root / Fkiec-3102	MailGazer	ssh	TAS
+fkiec-mg02	10.255.65.120	原本保存（受信用）	-	root / Fkiec-3102	MailGazer	ssh	TAS
+fkiec-mg03	10.255.65.131	原本保存（送信用）	-	root / Fkiec-3102	MailGazer	ssh	TAS
+fkiec-mg04	10.255.65.132	原本保存（送信用）	-	root / Fkiec-3102	MailGazer	ssh	TAS
+fkiec-ml01	10.255.65.42	postfix/dovcot	-	root / Fkiec-3102		ssh	ALP
+fkiec-ml02	10.255.65.43	postfix/dovcot	-	root / Fkiec-3102		ssh	ALP
+fkiec-mm01	10.255.65.103	マカフィ管理サーバ	-	administrator / Fkiec-3102		ssh	ALP
+fkiec-kj01	10.255.65.123	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj02	10.255.65.124	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj03	10.255.65.125	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj04	10.255.65.126	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj05	10.255.65.127	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj06	10.255.65.128	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj07	10.255.65.129	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kj08	10.255.65.130	県立校務支援システム	-	root / Fkiec-3102	賢者APサーバ	ssh	ALP
+fkiec-kd01	10.255.65.221	県立校務支援システム	-	root / Fkiec-3102	賢者データベース	ssh	ALP
+fkiec-kd02	10.255.65.222	県立校務支援システム	-	root / Fkiec-3102	賢者データベース	ssh	ALP
+fkiec-kd03	10.255.65.223	県立校務支援システム	-	root / Fkiec-3102	賢者データベース	ssh	ALP
+fkiec-kd04	10.255.65.224	県立校務支援システム	-	root / Fkiec-3102	賢者データベース	ssh	ALP
+fkiec-gw01	10.255.65.225	県立校務支援システム	-	root / Fkiec-3102	賢者GWサーバ	ssh	ALP
+fkiec-gd01	10.255.65.226	県立校務支援システム	-	root / Fkiec-3102	賢者GWデータベース	ssh	ALP
+fkiec-kb01	10.255.65.227	県立校務支援システム	-	root / Fkiec-3102	バックアップサーバ	ssh	-
+fkiec-fq01	10.255.65.229	利用者向け情報公開WEB	-	root / Fkiec-3102	利用者向け情報公開WEB	ssh	-
+fkiec-ml99	10.255.65.133	通知用MTA	-	root / Fkiec-3102	postfix	ssh	ＮＴＴ西日本福井支店
+fkiec-lg01	10.255.65.168	SYSLOGsv	-	root / Fkiec-3102		ssh	ＮＴＴ西日本福井支店
+fkiec-vv01	10.255.65.1	vCenter	ntt / !wF3rCJ5Q	administrator / Fkiec-3102	vCenterServer（アプライアンス）	https	ＮＴＴ西日本福井支店
+fkiec-pm03	10.255.65.163	性能監視sv	-	administrator / Fkiec-3102	パケットモニタ	ssh	ＮＴＴ西日本福井支店
+fkiec-dc01	10.255.65.171	Dockerオーケストレーション	-	root / Fkiec-3102	開発試験/開発サーバ	ssh	ＮＴＴ西日本福井支店
+fkiec-dc02	10.255.65.172	Dockerオーケストレーション	-	root / Fkiec-3102	検証サーバ	ssh	ＮＴＴ西日本福井支店
+fkiec-dc99	10.255.65.170	Dockerオーケストレーション	-	root / Fkiec-3102	リリースサーバ	ssh	ＮＴＴ西日本福井支店
+fkiec-mo01	10.255.65.169	監視サーバ	-	admin / Fkiec-3102	Zabbix	https/ssh	ＮＴＴ西日本福井支店
+fkiec-cs01	10.255.65.2	パケットモニタ基盤	-	root / Fkiec-3102	パケットモニタ基盤（Windows#1）/ VMwareESXi	ssh	ＮＴＴ西日本福井支店
+fkiec-pm01	10.255.65.161	パケットモニタ（教育）	-	administrator / Fkiec-3102	パケットモニタ（Windows#1）/ WS2012	ssh	ＮＴＴ西日本福井支店
+fkiec-pm02	10.255.65.162	パケットモニタ（県SC）	-	administrator / Fkiec-3102	パケットモニタ（Windows#1）/ WS2012	ssh	ＮＴＴ西日本福井支店
+fkiec-bk01	10.255.65.5	バックアップサーバ	-	administrator / Fkiec-3102	ArcServe（Windows#2）/ WS2016	ssh	ＮＴＴ西日本福井支店
+fkiec-c401	10.255.65.137	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-c402	10.255.65.138	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-c403	10.255.65.139	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-c404	10.255.65.140	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-c405	10.255.65.141	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-c406	10.255.65.142	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th 福井県版	ssh	EDUCOM
+fkiec-cd01	10.255.65.155	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th データベース	ssh	EDUCOM
+fkiec-cd02	10.255.65.156	小中校務支援システム	-	root / Fkiec-3102	EDUCOMマネージャーC4th データベース	ssh	EDUCOM
+fkiec-c499	10.255.65.143	小中校務支援システム	-	root / Fkiec-3102	検証サーバ	ssh	EDUCOM
+fkiec-fc01	10.255.65.215	SANスイッチ#1	-	-	SN3000B	-	YRL(ヨコオ)
+fkiec-fc02	10.255.65.214	SANスイッチ#2	-	-	SN3000B	-	YRL(ヨコオ)
+-	-	L3SW（分岐点SW）	-	-	藤島高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	高志高等学校・高志中学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	羽水高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	足羽高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	三国高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	金津高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	丸岡高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	丸岡高等学校（定時制）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	大野高等学校（全日、定時）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	勝山高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	鯖江高等学校（全日、定時）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	丹南高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	丹生高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	武生高等学校（全日、定時）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	武生高等学校　池田分校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	武生東高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	敦賀高等学校（全日、定時）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	美方高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	若狭高等学校（全日、定時）	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	若狭高等学校 海洋キャンパス	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	若狭東高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井農林高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	坂井高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	科学技術高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	奥越明成高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	武生工業高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	敦賀工業高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井商業高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	武生商業高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	道守高等学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	盲学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	ろう学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井南特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井東特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井東特別支援学校　月見分教室	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	福井東特別支援学校　五領分教室	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	奥越特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	嶺北特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	清水特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	南越特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	嶺南東特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	嶺南西特別支援学校	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	県教育委員会	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	嶺南教育事務所	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	教育総合研究所	-	TAS/三谷商事
+-	-	L3SW（分岐点SW）	-	-	特別支援教育センター	-	TAS/三谷商事

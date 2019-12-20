@@ -1,0 +1,39 @@
+fkisc-fw01	10.255.64.1	FW#1	neo / Neo@dmin	admin / P@ssw0rd	https,ssh
+fkisc-fw02	10.255.64.2	FW#2	neo / Neo@dmin	admin / P@ssw0rd	https,ssh
+fkisc-px01	10.255.64.8	Proxy#1	neo / Neo@dmin	admin / P@ssw0rd	http(8081)
+fkisc-px02	10.255.64.9	Proxy#2	neo / Neo@dmin	admin / P@ssw0rd	http(8081)
+fkisc-ca01	10.255.64.10	CAS#1_Proxy	neo / Neo@dmin	admin / P@ssw0rd	https(8082)
+fkisc-ca02	10.255.64.11	CAS#2_Proxy	neo / Neo@dmin	admin / P@ssw0rd	https(8082)
+fkisc-ms01	10.255.64.15	Mail#1	-	admin / P@ssw0rd	http(8000)
+fkisc-ms02	10.255.64.16	Mail#2	-	admin / P@ssw0rd	http(8000)
+fkisc-lb01	10.255.64.3	LB-本体#1	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb02	10.255.64.4	LB-本体#2	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb11	10.255.64.23	LB-RP#1	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb12	10.255.64.26	LB-RP#2	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb21	10.255.64.24	LB-Proxy#1	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb22	10.255.64.27	LB-Proxy#2	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb31	10.255.64.25	LB-Mail#1	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-lb32	10.255.64.28	LB-Mail#2	neo / Neo@dmin	admin / P@ssw0rd	https
+fkisc-wa01	10.255.64.12	WAF#1	neo / Neo@dmin1	admin / P@ssw0rd	ssh
+fkisc-wa02	10.255.64.13	WAF#2	neo / Neo@dmin1	admin / P@ssw0rd	ssh
+fkisc-wm01	10.255.64.14	MX-110	neo / Neo@dmin1	admin / webco123	https(8083)
+fkisc-ad01	10.255.64.5	権威DNS_サーバ本体	neo / Neo@dmin	Administrator / P@ssw0rd	ssh
+fkisc-ad01	-	権威DNS_ServerProtect	-	Administrator / P@ssw0rd	https(14943)
+fkisc-ad01	10.255.64.30	権威DNS_リモートmgt	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-cd01	10.255.64.6	キャッシュDNS_サーバ本体#1	neo / Neo@dmin	Administrator / P@ssw0rd	ssh
+fkisc-cd01	-	キャッシュDNS_ServerProtect#1	-	Administrator / P@ssw0rd	https(14943)
+fkisc-cd01	10.255.64.31	キャッシュDNS_リモートmgt#1	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-cd02	10.255.64.7	キャッシュDNS_サーバ本体#2	neo / Neo@dmin	Administrator / P@ssw0rd	ssh
+fkisc-cd02	-	キャッシュDNS_ServerProtect#2	-	Administrator / P@ssw0rd	https(14943)
+fkisc-cd02	10.255.64.37	キャッシュDNS_リモートmgt#2	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-sl01	10.255.64.29	syslog_サーバ本体	neo / Neo@dmin	Administrator / P@ssw0rd	rdp
+fkisc-sl01	-	syslog_Kiwi WebAccess	-	Administrator / P@ssw0rd	http(8088)
+fkisc-sl01	10.255.64.35	syslog_リモートmgt	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-mn01	10.255.64.19	監視_サーバ本体	neo / Neo@dmin	Administrator / P@ssw0rd	rdp
+fkisc-mn01	-	監視_WebSAM	-	Administrator / P@ssw0rd	viewer
+fkisc-mn01	10.255.64.34	監視_リモートmgt	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-cp01	10.255.64.18	キャプチャ_サーバ本体	neo / Neo@dmin	Administrator / P@ssw0rd	ssh
+fkisc-cp01	10.255.64.33	キャプチャ_リモートmgt	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-hd01	10.255.64.20	NAS_サーバ本体	neo / Neo@dmin	Administrator / P@ssw0rd	rdp
+fkisc-hd01	10.255.64.37	NAS_リモートmgt	neo / Neo@dmin	Administrator / P@ssw0rd	https
+fkisc-l301	10.255.64.17	L3_SW本体	-	admin / P@ssw0rd	telnet
